@@ -207,6 +207,12 @@
                     </div>
                 </div>
             </div>
+            <div class="mt-14 relative">
+                <button class="hidden tombol-edit-icon bg-gradasi-cerah text-white px-4 py-2 rounded-xl font-semibold text-sm absolute top-0 right-0 cursor-pointer" onclick="bukaModalTambah('homeimg','homeimg')"><i class="fa fa-plus mr-2"></i> Tambah Gambar</button>
+                <h3 class="font-playfair font-semibold text-2xl text-gelap-100 mb-6">Dokumentasi Terbaru</h3>
+                <div id="grid-home" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"></div>
+            </div>
+
         </section>
 
         <!-- GUNUNG -->
@@ -214,9 +220,9 @@
             <div class="card-profil p-7 mb-10 relative shadow-modern">
                 <h3 class="font-playfair font-semibold text-2xl text-center text-gelap-100 mb-7">Pilih Cerita Perjalanan</h3>
                 <div id="daftar-gunung" class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                    <button onclick="bukaDetailGunung('gedepangrango')" id="btn-gunung-gedepangrango" class="w-full nav-active py-3 px-4 rounded-lg font-medium transition-all text-center text-sm cursor-pointer">Gede & Pangrango</button>
-                    <button onclick="bukaDetailGunung('rinjani')" id="btn-gunung-rinjani" class="w-full bg-gelap-800/50 hover:bg-gelap-700/70 border border-gelap-700 py-3 px-4 rounded-lg font-medium transition-all text-center text-sm cursor-pointer">Gunung Rinjani</button>
-                    <button onclick="bukaDetailGunung('kerinci')" id="btn-gunung-kerinci" class="w-full bg-gelap-800/50 hover:bg-gelap-700/70 border border-gelap-700 py-3 px-4 rounded-lg font-medium transition-all text-center text-sm cursor-pointer">Gunung Kerinci</button>
+                    <button onclick="bukaDetailGunung('gedepangrango')" id="btn-gunung-gedepangrango" class="w-full nav-active py-3 px-4 rounded-lg font-medium transition-all text-center text-sm cursor-pointer"><span id="label-gunung-gedepangrango">Gede & Pangrango</span><span class="tombol-edit-icon hidden" style="margin-left:6px;font-size:11px" onclick="event.stopPropagation();ubahNamaGunung('gedepangrango')"><i class="fa fa-pencil"></i></span></button>
+                    <button onclick="bukaDetailGunung('rinjani')" id="btn-gunung-rinjani" class="w-full bg-gelap-800/50 hover:bg-gelap-700/70 border border-gelap-700 py-3 px-4 rounded-lg font-medium transition-all text-center text-sm cursor-pointer"><span id="label-gunung-rinjani">Gunung Rinjani</span><span class="tombol-edit-icon hidden" style="margin-left:6px;font-size:11px" onclick="event.stopPropagation();ubahNamaGunung('rinjani')"><i class="fa fa-pencil"></i></span></button>
+                    <button onclick="bukaDetailGunung('kerinci')" id="btn-gunung-kerinci" class="w-full bg-gelap-800/50 hover:bg-gelap-700/70 border border-gelap-700 py-3 px-4 rounded-lg font-medium transition-all text-center text-sm cursor-pointer"><span id="label-gunung-kerinci">Gunung Kerinci</span><span class="tombol-edit-icon hidden" style="margin-left:6px;font-size:11px" onclick="event.stopPropagation();ubahNamaGunung('kerinci')"><i class="fa fa-pencil"></i></span></button>
                 </div>
             </div>
 
@@ -317,9 +323,9 @@
             </div>
             <div class="card-profil p-7 mb-10 shadow-modern">
                 <div id="daftar-gunung-peta" class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                    <button onclick="bukaPetaGunung('gedepangrango')" id="btn-peta-gedepangrango" class="w-full nav-active py-3 px-4 rounded-lg font-medium transition-all text-center text-sm cursor-pointer">Gede & Pangrango</button>
-                    <button onclick="bukaPetaGunung('rinjani')" id="btn-peta-rinjani" class="w-full bg-gelap-800/50 hover:bg-gelap-700/70 border border-gelap-700 py-3 px-4 rounded-lg font-medium transition-all text-center text-sm cursor-pointer">Gunung Rinjani</button>
-                    <button onclick="bukaPetaGunung('kerinci')" id="btn-peta-kerinci" class="w-full bg-gelap-800/50 hover:bg-gelap-700/70 border border-gelap-700 py-3 px-4 rounded-lg font-medium transition-all text-center text-sm cursor-pointer">Gunung Kerinci</button>
+                    <button onclick="bukaPetaGunung('gedepangrango')" id="btn-peta-gedepangrango" class="w-full nav-active py-3 px-4 rounded-lg font-medium transition-all text-center text-sm cursor-pointer"><span id="label-peta-gedepangrango">Gede & Pangrango</span><span class="tombol-edit-icon hidden" style="margin-left:6px;font-size:11px" onclick="event.stopPropagation();ubahNamaGunung('gedepangrango')"><i class="fa fa-pencil"></i></span></button>
+                    <button onclick="bukaPetaGunung('rinjani')" id="btn-peta-rinjani" class="w-full bg-gelap-800/50 hover:bg-gelap-700/70 border border-gelap-700 py-3 px-4 rounded-lg font-medium transition-all text-center text-sm cursor-pointer"><span id="label-peta-rinjani">Gunung Rinjani</span><span class="tombol-edit-icon hidden" style="margin-left:6px;font-size:11px" onclick="event.stopPropagation();ubahNamaGunung('rinjani')"><i class="fa fa-pencil"></i></span></button>
+                    <button onclick="bukaPetaGunung('kerinci')" id="btn-peta-kerinci" class="w-full bg-gelap-800/50 hover:bg-gelap-700/70 border border-gelap-700 py-3 px-4 rounded-lg font-medium transition-all text-center text-sm cursor-pointer"><span id="label-peta-kerinci">Gunung Kerinci</span><span class="tombol-edit-icon hidden" style="margin-left:6px;font-size:11px" onclick="event.stopPropagation();ubahNamaGunung('kerinci')"><i class="fa fa-pencil"></i></span></button>
                 </div>
             </div>
             <div class="flex justify-between items-center mb-6">
@@ -405,6 +411,7 @@
             if(!localStorage.getItem('peta_gedepangrango')) setArr('peta_gedepangrango', [{url:'https://picsum.photos/id/1033/600/400', caption:'Peta Jalur Gede-Pangrango'}]);
             if(!localStorage.getItem('peta_rinjani')) setArr('peta_rinjani', []);
             if(!localStorage.getItem('peta_kerinci')) setArr('peta_kerinci', []);
+            if(!localStorage.getItem('home_images')) setArr('home_images', []);
             if(!localStorage.getItem('alat_items')){
                 setArr('alat_items', [
                     {icon:'fa-cube', nama:'Tenda Dome 4 Orang', desc:'Tenda utama untuk berlindung di segala cuaca.'},
@@ -439,6 +446,7 @@
                 else el.innerHTML = v;
             });
             renderSemua();
+            terapkanNamaGunung();
         };
 
         function renderSemua(){
@@ -449,6 +457,7 @@
             renderAlat();
             renderJadwal();
             renderPeta();
+            renderHome();
         }
 
         function tampilkanEditIcon(selector){
@@ -506,6 +515,7 @@
                 html += '<span class="hidden tombol-edit-icon btn-google cursor-pointer" onclick="salinAlat('+i+')" title="Salin ke Catatan"><i class="fa fa-clipboard"></i></span>';
                 html += '<span class="hidden tombol-edit-icon btn-hapus cursor-pointer" onclick="hapusItem(\'alat_items\','+i+',\'alat\')"><i class="fa fa-trash"></i></span>';
                 html += '</div>';
+                if(it.gambar){ html += '<img src="'+it.gambar+'" class="w-full h-44 object-cover rounded-xl mb-4">'; }
                 html += '<div class="w-12 h-12 rounded-xl bg-gradasi-aksen text-white flex items-center justify-center mb-4 shadow-glow"><i class="fa '+(it.icon||'fa-cube')+' text-xl"></i></div>';
                 html += '<h4 class="font-bold text-gelap-100 text-lg mb-2">'+it.nama+'</h4>';
                 html += '<p class="text-gelap-400 text-sm">'+it.desc+'</p>';
@@ -588,6 +598,7 @@
             else if(jenis==='alat') renderAlat();
             else if(jenis==='jadwal') renderJadwal();
             else if(jenis==='peta') renderPeta();
+            else if(jenis==='homeimg') renderHome();
         }
 
         function bukaModalTambah(jenis, key){
@@ -597,7 +608,7 @@
             var body = document.getElementById('modal-tambah-body');
             var judul = document.getElementById('judul-tambah');
             var html = '';
-            if(jenis==='galeri' || jenis==='docs' || jenis==='peta'){
+            if(jenis==='galeri' || jenis==='docs' || jenis==='peta' || jenis==='homeimg'){
                 judul.textContent = 'Tambah Foto / Video';
                 html += '<div><label class="text-sm text-gelap-400 mb-1 block">Jenis:</label><select id="tambah-jenis-media" class="input-edit w-full"><option value="image">Gambar (Foto)</option><option value="video">Video (URL file .mp4)</option></select></div>';
                 html += '<div><label class="text-sm text-gelap-400 mb-1 block">URL Media:</label><input type="text" id="tambah-url" class="input-edit w-full" placeholder="https://..."></div>';
@@ -607,6 +618,7 @@
                 html += '<div><label class="text-sm text-gelap-400 mb-1 block">Ikon:</label><select id="tambah-icon" class="input-edit w-full"><option value="fa-cube">Kotak/Tenda</option><option value="fa-fire">Api/Kompor</option><option value="fa-bolt">Petir/Headlamp</option><option value="fa-medkit">Kesehatan/P3K</option><option value="fa-map">Peta/Navigasi</option><option value="fa-balance-scale">Tidur/Sleeping Bag</option><option value="fa-shopping-bag">Tas/Carrier</option><option value="fa-glass">Minum/Botol</option></select></div>';
                 html += '<div><label class="text-sm text-gelap-400 mb-1 block">Nama Alat:</label><input type="text" id="tambah-nama" class="input-edit w-full" placeholder="Contoh: Tenda Dome 4 Orang"></div>';
                 html += '<div><label class="text-sm text-gelap-400 mb-1 block">Deskripsi:</label><input type="text" id="tambah-desc" class="input-edit w-full" placeholder="Keterangan singkat"></div>';
+                html += '<div><label class="text-sm text-gelap-400 mb-1 block">URL Gambar (opsional):</label><input type="text" id="tambah-gambar" class="input-edit w-full" placeholder="https://...jpg"></div>';
             } else if(jenis==='jadwal'){
                 judul.textContent = 'Tambah Jadwal Pendakian';
                 html += '<div><label class="text-sm text-gelap-400 mb-1 block">Nama Gunung:</label><input type="text" id="tambah-gunung" class="input-edit w-full" placeholder="Contoh: Gunung Semeru"></div>';
@@ -644,13 +656,21 @@
                 if(!urlp){ alert('URL peta tidak boleh kosong!'); return; }
                 arr = getArr(key); arr.push({url:urlp, caption:capp}); setArr(key, arr);
                 renderPeta();
+            } else if(currentTambahJenis==='homeimg'){
+                key = 'home_images';
+                var urlh = document.getElementById('tambah-url').value.trim();
+                var caph = document.getElementById('tambah-caption').value.trim();
+                if(!urlh){ alert('URL gambar tidak boleh kosong!'); return; }
+                arr = getArr(key); arr.push({url:urlh, caption:caph}); setArr(key, arr);
+                renderHome();
             } else if(currentTambahJenis==='alat'){
                 key = 'alat_items';
                 var icon = document.getElementById('tambah-icon').value;
                 var nama = document.getElementById('tambah-nama').value.trim();
                 var desc = document.getElementById('tambah-desc').value.trim();
+                var gambar = document.getElementById('tambah-gambar').value.trim();
                 if(!nama){ alert('Nama alat tidak boleh kosong!'); return; }
-                arr = getArr(key); arr.push({icon:icon, nama:nama, desc:desc}); setArr(key, arr);
+                arr = getArr(key); arr.push({icon:icon, nama:nama, desc:desc, gambar:gambar}); setArr(key, arr);
                 renderAlat();
             } else if(currentTambahJenis==='jadwal'){
                 key = 'jadwal_items';
@@ -744,6 +764,49 @@
             URL.revokeObjectURL(a.href);
             alert('File data.js berhasil diunduh! Upload file ini ke hosting (folder yang sama dengan index.html), maka semua pengunjung akan melihat perubahan Anda.');
         }
+        function ubahNamaGunung(key){
+            if(!statusLogin){ alert('Login dulu sebagai owner!'); return; }
+            var el = document.getElementById('label-gunung-'+key);
+            var sekarang = el ? el.textContent : '';
+            var baru = prompt('Ketik nama gunung baru untuk tombol ini:', sekarang);
+            if(baru === null || baru.trim() === '') return;
+            baru = baru.trim();
+            localStorage.setItem('nama_btn_'+key, baru);
+            localStorage.setItem('judul_'+key, baru);
+            var lg = document.getElementById('label-gunung-'+key);
+            var lp = document.getElementById('label-peta-'+key);
+            if(lg) lg.textContent = baru;
+            if(lp) lp.textContent = baru;
+            var jd = document.getElementById('judul-'+key); if(jd) jd.textContent = baru;
+            alert('Nama gunung berhasil diubah & tersimpan permanen!');
+        }
+
+        function terapkanNamaGunung(){
+            ['gedepangrango','rinjani','kerinci'].forEach(function(k){
+                var v = localStorage.getItem('nama_btn_'+k);
+                if(!v) return;
+                var lg = document.getElementById('label-gunung-'+k);
+                var lp = document.getElementById('label-peta-'+k);
+                if(lg) lg.textContent = v;
+                if(lp) lp.textContent = v;
+            });
+        }
+
+        function renderHome(){
+            var arr = getArr('home_images');
+            var c = document.getElementById('grid-home');
+            var html = '';
+            arr.forEach(function(it, i){
+                html += '<div class="relative group">';
+                html += '<span class="hidden tombol-edit-icon btn-hapus absolute top-2 right-2 z-10 cursor-pointer" onclick="hapusItem(\'home_images\','+i+',\'homeimg\')"><i class="fa fa-trash"></i></span>';
+                html += '<img src="'+it.url+'" class="rounded-2xl shadow-modern card-hover object-cover w-full h-56 border border-gelap-800 hover:border-aksen-utama/50">';
+                if(it.caption) html += '<p class="text-sm text-gelap-400 mt-2 px-1">'+it.caption+'</p>';
+                html += '</div>';
+            });
+            c.innerHTML = html;
+            tampilkanEditIcon('#grid-home .tombol-edit-icon');
+        }
+
         function bukaHalaman(nama){
             document.querySelectorAll('.isi-halaman').forEach(function(el){ el.classList.add('hidden'); });
             document.getElementById('hal-'+nama).classList.remove('hidden');
